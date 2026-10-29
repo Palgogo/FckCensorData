@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Public source registry for candidate Russian uncensored-music lists. It records where a list was found; it does not assert that every linked track is an uncensored master.",
+  "updatedAt": "2026-10-29T15:00:00Z",
+  "sources": [
+    {
+      "id": "fckcensordata-upstream",
+      "name": "Hazzz895/FckCensorData",
+      "url": "https://github.com/Hazzz895/FckCensorData",
+      "rawListUrl": "https://raw.githubusercontent.com/Hazzz895/FckCensorData/main/list.json",
+      "kind": "canonical-replacement-database",
+      "scope": "Track-level censored-to-uncensored replacement references",
+      "trust": "primary-community-database",
+      "lastCheckedAt": "2026-10-29T14:35:25Z",
+      "notes": "Primary upstream. list_v2.json and tracks/ are also present; comparison script currently uses legacy list.json for compatibility with the local 2026-09 snapshot."
+    },
+    {
+      "id": "muzvizor-dirty-playlist-2024",
+      "name": "Грязный плейлист (Без Цензуры 2024)",
+      "url": "https://muzvizor.com/playlists/390",
+      "kind": "playlist-candidate-source",
+      "scope": "15-track DJ playlist",
+      "trust": "discovery-only",
+      "lastCheckedAt": "2026-10-29T00:00:00Z",
+      "notes": "Use only to discover candidates; each audio source still requires acoustic comparison against a verified reference."
+    },
+    {
+      "id": "mp3-diamond-luchshee-bez-tsenzury",
+      "name": "Лучшее без цензуры",
+      "url": "https://mp3-diamond.org/playlist/luchshee-bez-tsenzury",
+      "kind": "playlist-candidate-source",
+      "scope": "Russian-language playlist catalogue",
+      "trust": "discovery-only",
+      "lastCheckedAt": "2026-10-29T00:00:00Z",
+      "notes": "Catalogue labels are not proof that supplied audio is the original uncensored master."
+    },
+    {
+      "id": "radiospinner-new-rap",
+      "name": "Новый РЭП без цензуры Radio",
+      "url": "https://radiospinner.com/stations/novyi-rep-bez-tsenzury-1007981/",
+      "kind": "radio-play-history-candidate-source",
+      "scope": "Russian rap discovery via current/history playlist",
+      "trust": "discovery-only",
+      "lastCheckedAt": "2026-10-29T00:00:00Z",
+      "notes": "Dynamic radio playlist; archive dates and individual-track provenance are not guaranteed."
+    }
+  ]
+}
